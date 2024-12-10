@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Quicksand:wght@300..700&display=swap');
+
+
+body {
+    font-family: quicksand;
+    text-align: center;
+    text-transform: capitalize;
+    color: aliceblue;
+    background-color: black;
+}
+
+.pokemon-name {
+    
+    font-size: 1.3rem;
+}
+
+
+.pokemon-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0px;
+    width: 200px;
+   
+    box-sizing: border-box;
+}
+
+.pokemon-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 10px 0;
+}
+
+.atacks {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding:10px 0 0 0;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px
+
+}
+
+.statistics{
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding:10px 0 10px 0;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px
+
+}
+
+.pagination {
+    margin: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.stats-list li {
+    text-align: left;
+
+    padding-left: 15px;
+    
+}
+
+
+.pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+    gap: 15px;
+    
+}
+
+  .type-badge {
+    display: inline-block;
+    margin: 6px 4px;
+    padding: 4px 6px;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 0.8em;
+    text-transform: capitalize;
+  }
+  
+  
+
+
+@media (max-width: 800px) {
+    .pokemon-list {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+@media (max-width: 500px) {
+    .pokemon-list {
+        grid-template-columns: 1fr;
+       
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .pokemon-item {
+        width: 250px;
+        
+    }
+}
